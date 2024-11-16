@@ -7,43 +7,19 @@ Description: |
   is downloaded from my Public Github repository, then deployed on Apache Web Server.
 
 Parameters:
-
-Resources:
+  
+Resources: 
+  
   myWebServer:
-    Type: AWS::EC2::Instance
-    Properties:
-      ImageId: "String"
-      InstanceType: "String"
-      KeyName: "String"
-      SecurityGroupIds:
-        - "String"
-      SecurityGroups:
-        - "String"
-      Tags:
-        - Key: "String"
-          Value: "String"
-      UserData: "String"
+    
 
   mySecGrp:
-    Type: AWS::EC2::SecurityGroup
-    Properties:
-      GroupDescription: "allow ssh and http" # Required
-      SecurityGroupIngress:
-        - IpProtocol: tcp
-          FromPort: 22
-          ToPort: 22
-          CidrIp: 0.0.0.0/0
-        - IpProtocol: tcp
-          FromPort: 80
-          ToPort: 80
-          CidrIp: 0.0.0.0/0
-      Tags:
-        - Key: "Name"
-          Value: "necati-kitten-19"
-        - Key: "cohort"
-          Value: "19"
+    
 
 Outputs:
   webSiteURL:
     Description: URL of website
     Value: !Sub
+      - 
+      - 
+   
